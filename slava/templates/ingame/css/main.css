@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600'); /*Montserrat*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700'); /*Open Sans*/
+@import url('/templates/ingame/fonts/font-awesome.css');
+@import url('/templates/ingame/css/bootstrap.css');
+@import url('/templates/ingame/css/style1.css');
+@import url('/templates/ingame/css/style2.css');
+.with_code table tr td {
+    word-break: normal;
+}

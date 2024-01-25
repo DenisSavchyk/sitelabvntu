@@ -1,0 +1,71 @@
+.pixel-loader {
+	 width: 8rem;
+	 height: 3rem;
+	 position: relative;
+}
+ .pixel-loader .pixel {
+	 width: 0.8rem;
+	 height: 0.8rem;
+	 display: block;
+	 position: absolute;
+	 opacity: 0;
+	 animation: pixel-fly 2s infinite;
+}
+ .pixel-loader .pixel:before {
+	 content: "";
+	 transition: all 0.3s ease;
+	 display: block;
+	 background: #ddd;
+	 width: 100%;
+	 height: 100%;
+	 backface-visibility: hidden;
+	 animation: pixel-inner 2s infinite;
+}
+ .pixel-loader .pixel.pixel-1 {
+	 transform: translateX(0);
+	 top: 6%;
+}
+ .pixel-loader .pixel.pixel-2 {
+	 animation-duration: 1.5s;
+	 animation-delay: 1s;
+	 top: 60%;
+}
+ .pixel-loader .pixel.pixel-3 {
+	 animation-delay: 0.5s;
+	 top: 22%;
+}
+ .pixel-loader .pixel.pixel-4 {
+	 animation-duration: 1.2s;
+	 top: 17%;
+}
+ .pixel-loader .pixel.pixel-5 {
+	 animation-duration: 1s;
+	 top: 65%;
+}
+ .pixel-loader .pixel.pixel-small {
+	 width: 0.45rem;
+	 height: 0.45rem;
+}
+ .pixel-loader .pixel.pixel-medium {
+	 width: 0.6rem;
+	 height: 0.6rem;
+}
+ @keyframes pixel-fly {
+	 50% {
+		 opacity: 1;
+	}
+	 100% {
+		 transform: translateX(7rem);
+		 opacity: 0;
+	}
+}
+ @keyframes pixel-inner {
+	 80% {
+		 background: #ef2a7c;
+	}
+}
+
+@font-face {
+    font-family: "Afters2";
+    src: url("https://test.retrosquad.ru/fonts/after.ttf")
+}

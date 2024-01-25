@@ -1,0 +1,76 @@
+//Variables
+$background-color: rgb(248, 249, 251);
+$links-color: rgb(12, 102, 255);
+$btns-color: rgb(12, 102, 255);
+
+$font-name: 'Montserrat'; //основной шрифт
+$font-name-secondary: 'Open Sans'; //вторичный:
+$font-size: 12px;
+$font-line-height: 20px;
+
+$font-color: rgb(93, 108, 132); //основной текст
+$font-color-dark: rgb(10, 31, 68); //заголовки, жирные шрифты
+$font-color-gray: rgb(138, 148, 166); //в хедере
+$font-color-light: rgb(166, 174, 188); //в инпутах
+
+$border-color: rgb(241, 242, 244);
+$dark-border-color: rgb(225, 228, 232);
+$light-border-color: rgb(221, 221, 221);
+
+$info-color: rgb(10, 31, 68);
+$info-border-color: rgb(141, 176, 204);
+$info-border-color2: rgb(202, 221, 237);
+$info-bg-color: rgb(225, 239, 250);
+$info-text-color: rgb(70, 110, 165);
+
+$success-color: rgb(11, 176, 123);
+$success-border-color: rgb(143, 196, 122);
+$success-border-color2: rgb(205, 232, 195);
+$success-bg-color: rgb(227, 245, 220);
+$success-text-color: #0BB07B;
+
+$warning-color: rgb(255, 173, 13);
+$warning-border-color: rgb(224, 195, 146);
+$warning-border-color2: rgb(232, 221, 202);
+$warning-bg-color: rgb(255, 240, 210);
+$warning-text-color: rgb(159, 123, 52);
+
+$error-color: rgb(240, 61, 61);
+$error-border-color: rgb(224, 146, 146);
+$error-border-color2: rgb(232, 202, 202);
+$error-bg-color: rgb(252, 227, 227);
+$error-text-color: #FF5D5D;
+
+$light-color: rgb(119, 119, 119);
+$light-bg-color: rgb(245, 245, 245);
+$light-border-color2: rgb(234, 234, 234);
+$light-text-color: rgb(119, 119, 119);
+
+%cropping-text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+%background-cover {
+	background-size: 100% 100% !important;
+}
+
+%block-shadow {
+	box-shadow: 0 3px 4px rgba(10, 31, 68, 0.1), 0 0 1px rgba(10, 31, 68, 0.08);
+	border-radius: 4px;
+	background: rgb(255, 255, 255);
+}
+
+@mixin fa-icons($type) {
+	font-family: Font Awesome\ 5 $type;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	font-size: 1.33333em;
+	line-height: 0.75em;
+	vertical-align: -.0667em;
+}
